@@ -22,7 +22,7 @@ const Home: NextPage<Props> = (props: Props) => {
   });
   const { addTodo, asyncAddTodo, isPending, asyncInstaThunk, USD } = useTodoListStore();
 
-  console.log(USD)
+  // console.log(USD)
   console.log(props.data)
 
   const onSubmit = handleSubmit(({ todo }) => {
