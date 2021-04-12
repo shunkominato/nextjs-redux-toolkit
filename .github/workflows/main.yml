@@ -36,5 +36,5 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run test
-        run: echo aaaaaaaaaaaa!
+        run: pwd
 
