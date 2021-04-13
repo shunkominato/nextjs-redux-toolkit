@@ -1,13 +1,9 @@
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
 export type InputProps = {
   name: string;
-}
+};
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(({ name }, ref) => (
-  <input
-    name={name}
-    type='text'
-    ref={ref}
-  />
-));
+export const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ name }, ref) => <input name={name} type="text" ref={ref} />
+);
