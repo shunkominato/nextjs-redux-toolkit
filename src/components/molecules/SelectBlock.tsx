@@ -9,7 +9,8 @@ type Props = {
   onChange: (e: string) => void
 }
 
-const SelectBlock: FC<Props> = ({ label, value, options, onChange }) => {
+const SelectBlock: FC<Props> = React.memo(({ label, value, options, onChange }) => {
+  console.log('select')
   return (
     <div>
       <div className={style.descriptionblock}>{label}</div>
@@ -26,6 +27,6 @@ const SelectBlock: FC<Props> = ({ label, value, options, onChange }) => {
       </select>
     </div>
   )
-}
+})
 
 export default SelectBlock

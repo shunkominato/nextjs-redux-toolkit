@@ -76,26 +76,6 @@ const Home: NextPage<any> = ({ parentProducts, childProduct, kakou2s, userCartFo
     [setParentProduct]
   )
 
-  // console.log(USD)
-
-
-  const onSubmit = handleSubmit(({ todo }) => {
-    console.log(todo);
-    addTodo(todo);
-    reset();
-  });
-
-  const onAsyncSubmit = handleSubmit(({ todo }) => {
-    asyncAddTodo(todo);
-    reset();
-  });
-
-  const ongetInsta = handleSubmit(() => {
-    console.log("indexpage");
-    asyncInstaThunk();
-    reset();
-  });
-
   return (
     <div className={grobalStyle.base}>
       <Head>
